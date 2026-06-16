@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami Ullah | Premium Frontend Web Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Sami Ullah, a professional Frontend Web Developer specializing in modern, responsive, and user-focused SaaS-inspired interfaces.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                Sami<span class="logo-accent">.dev</span>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" id="link-home">Home</a>
+                <a href="#about" class="nav-link" id="link-about">About</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+                <div class="mobile-cta-wrapper">
+                    <a href="#contact" class="btn btn-primary nav-cta" id="cta-hire-mobile">Hire Me</a>
+                </div>
+            </nav>
+
+            <!-- Desktop CTA -->
+            <div class="nav-desktop-cta">
+                <a href="#contact" class="btn btn-primary" id="cta-hire-desktop">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="bg-grid-glows">
+                <div class="glow-orb glow-orb-1"></div>
+                <div class="glow-orb glow-orb-2"></div>
+            </div>
+            <div class="container hero-container">
+                <!-- Hero Left: Info -->
+                <div class="hero-content scroll-reveal fade-left">
+                    <div class="badge-accent">
+                        <i class="fa-solid fa-code"></i> Frontend Developer
+                    </div>
+                    <h1 class="hero-heading">
+                        Hi, I'm <span class="gradient-text">Sami Ullah</span>
+                    </h1>
+                    <h2 class="hero-subheading">
+                        I build <span class="typing-text" id="typing"></span>
+                    </h2>
+                    <p class="hero-description">
+                        I create modern, responsive, and user-friendly websites that help businesses build a strong
+                        online presence and convert visitors into clients.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-gradient" id="hero-btn-work">
+                            <span>View My Work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="hero-btn-contact">Contact Me</a>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Illustration & Floating Badges -->
+                <div class="hero-visual scroll-reveal fade-right">
+                    <div class="visual-wrapper">
+                        <img src="assets/hero-workspace.png" alt="Sami Ullah Developer Workspace Mockup"
+                            class="hero-img">
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-html" id="badge-html">
+                            <i class="fa-brands fa-html5 text-orange"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="floating-badge badge-css" id="badge-css">
+                            <i class="fa-brands fa-css3-alt text-blue"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="floating-badge badge-js" id="badge-js">
+                            <i class="fa-brands fa-js text-yellow"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="floating-badge badge-responsive" id="badge-responsive">
+                            <i class="fa-solid fa-mobile-screen-button text-cyan"></i>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header scroll-reveal fade-up">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <!-- About Left: Image -->
+                    <div class="about-visual scroll-reveal fade-left">
+                        <div class="about-img-container">
+                            <img src="assets/about-dev.png" alt="Sami Ullah Profile" class="about-img">
+                            <div class="glow-bg"></div>
+                        </div>
+                    </div>
+
+                    <!-- About Right: Content -->
+                    <div class="about-content scroll-reveal fade-right">
+                        <h3 class="about-intro">Passionate about turning design concepts into high-performing frontend
+                            solutions</h3>
+                        <p class="about-description">
+                            I am a Frontend Web Developer passionate about building modern, responsive, and visually
+                            appealing websites. I focus on creating seamless user experiences and transforming ideas
+                            into professional digital products.
+                        </p>
+
+                        <!-- Statistics Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <h4 class="stat-number">10+</h4>
+                                <p class="stat-label">Projects Completed</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <h4 class="stat-number">100%</h4>
+                                <p class="stat-label">Responsive Designs</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <h4 class="stat-number">Fast</h4>
+                                <p class="stat-label">Learning Developer</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <h4 class="stat-number">Client</h4>
+                                <p class="stat-label">Focused Approach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header scroll-reveal fade-up">
+                    <span class="section-subtitle">My Stack</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill Card 1: HTML5 -->
+                    <div class="skill-card scroll-reveal fade-up delay-1">
+                        <div class="skill-icon text-orange">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3 class="skill-title">HTML5</h3>
+                        <p class="skill-desc">Semantic tagging, SEO structure, accessibility (ARIA), and structured
+                            layouts.</p>
+                    </div>
+
+                    <!-- Skill Card 2: CSS3 -->
+                    <div class="skill-card scroll-reveal fade-up delay-2">
+                        <div class="skill-icon text-blue">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h3 class="skill-title">CSS3</h3>
+                        <p class="skill-desc">Flexbox, Grid, custom properties, animations, and clean modular designs.
+                        </p>
+                    </div>
+
+                    <!-- Skill Card 3: JavaScript -->
+                    <div class="skill-card scroll-reveal fade-up delay-3">
+                        <div class="skill-icon text-yellow">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3 class="skill-title">JavaScript</h3>
+                        <p class="skill-desc">ES6+ syntax, asynchronous fetching, DOM manipulation, and dynamic client
+                            integrations.</p>
+                    </div>
+
+                    <!-- Skill Card 4: Responsive Design -->
+                    <div class="skill-card scroll-reveal fade-up delay-4">
+                        <div class="skill-icon text-cyan">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <h3 class="skill-title">Responsive Design</h3>
+                        <p class="skill-desc">Mobile-first design workflow ensuring sleek layouts on any screen size.
+                        </p>
+                    </div>
+
+                    <!-- Skill Card 5: Git -->
+                    <div class="skill-card scroll-reveal fade-up delay-5">
+                        <div class="skill-icon text-red">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+                        <h3 class="skill-title">Git</h3>
+                        <p class="skill-desc">Version control, branching strategies, commit hygiene, and merging
+                            workflows.</p>
+                    </div>
+
+                    <!-- Skill Card 6: GitHub -->
+                    <div class="skill-card scroll-reveal fade-up delay-6">
+                        <div class="skill-icon text-purple">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h3 class="skill-title">GitHub</h3>
+                        <p class="skill-desc">Collaborative development, pull request reviews, and automated deployment
+                            integrations.</p>
+                    </div>
+
+                    <!-- Skill Card 7: UI/UX Fundamentals -->
+                    <div class="skill-card scroll-reveal fade-up delay-7">
+                        <div class="skill-icon text-emerald">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="skill-title">UI/UX Fundamentals</h3>
+                        <p class="skill-desc">Visual hierarchy, color palettes, clean grids, typography, and premium
+                            user-flows.</p>
+                    </div>
+
+                    <!-- Skill Card 8: Java -->
+                    <div class="skill-card scroll-reveal fade-up delay-1">
+                        <div class="skill-icon text-red">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <h3 class="skill-title">Java</h3>
+                        <p class="skill-desc">Object-oriented programming, core Java concepts, console applications, and foundational backend logic.</p>
+                    </div>
+
+                    <!-- Skill Card 9: Python -->
+                    <div class="skill-card scroll-reveal fade-up delay-2">
+                        <div class="skill-icon text-blue">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3 class="skill-title">Python</h3>
+                        <p class="skill-desc">Scripting, automation, data manipulation, and rapid prototyping with clean, readable syntax.</p>
+                    </div>
+
+                    <!-- Skill Card 10: DBMS -->
+                    <div class="skill-card scroll-reveal fade-up delay-3">
+                        <div class="skill-icon text-cyan">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="skill-title">DBMS</h3>
+                        <p class="skill-desc">Relational database concepts, SQL queries, normalization, ER modeling, and data storage fundamentals.</p>
+                    </div>
+
+                    <!-- Skill Card 11: Data Structures -->
+                    <div class="skill-card scroll-reveal fade-up delay-4">
+                        <div class="skill-icon text-purple">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3 class="skill-title">Data Structures</h3>
+                        <p class="skill-desc">Arrays, linked lists, stacks, queues, trees, and graphs with practical algorithm problem solving.</p>
+                    </div>
+
+                    <!-- Skill Card 12: OOP -->
+                    <div class="skill-card scroll-reveal fade-up delay-5">
+                        <div class="skill-icon text-emerald">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="skill-title">OOP</h3>
+                        <p class="skill-desc">Encapsulation, inheritance, polymorphism, and abstraction applied through Java and Python class design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header scroll-reveal fade-up">
+                    <span class="section-subtitle">My Creative Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card scroll-reveal fade-up">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-prime-estates.png" alt="Prime Estates Project Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://algo-sami.github.io/prime-estates-website/"
+                                        class="project-link-btn" title="Live Demo" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                    <a href="https://github.com/Algo-Sami/prime-estates-website"
+                                        class="project-link-btn" title="GitHub Repository" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-tag">Real Estate Agency Website</span>
+                            <h3 class="project-title">Prime Estates</h3>
+                            <p class="project-description">
+                                A modern and responsive real estate website featuring property listings, interactive
+                                sections, and a professional user experience.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://algo-sami.github.io/prime-estates-website/"
+                                    class="btn btn-gradient btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-eye"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Algo-Sami/prime-estates-website"
+                                    class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card scroll-reveal fade-up delay-1">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-amazon-clone.png" alt="Amazon Clone Project Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://algo-sami.github.io/Amazon-clone/"
+                                        class="project-link-btn" title="Live Demo" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                    <a href="https://github.com/Algo-Sami/Amazon-clone"
+                                        class="project-link-btn" title="GitHub Repository" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-tag">E-commerce Clone</span>
+                            <h3 class="project-title">Amazon Clone</h3>
+                            <p class="project-description">
+                                A high-fidelity Amazon web clone featuring a dynamic shopping cart, product catalog search, order checkout mockups, and fully responsive layouts.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://algo-sami.github.io/Amazon-clone/"
+                                    class="btn btn-gradient btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-eye"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Algo-Sami/Amazon-clone"
+                                    class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card scroll-reveal fade-up delay-2">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-tic-tac-toe.png" alt="Tic Tac Toe Game Project Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://algo-sami.github.io/Tic-Tac-Toe-Game/"
+                                        class="project-link-btn" title="Live Demo" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                    <a href="https://github.com/Algo-Sami/Tic-Tac-Toe-Game"
+                                        class="project-link-btn" title="GitHub Repository" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-tag">Interactive Web Game</span>
+                            <h3 class="project-title">Tic Tac Toe</h3>
+                            <p class="project-description">
+                                A modern, interactive Tic Tac Toe game with neon glowing symbols, real-time score keeping, restart triggers, and a fully responsive grid.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://algo-sami.github.io/Tic-Tac-Toe-Game/"
+                                    class="btn btn-gradient btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-eye"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Algo-Sami/Tic-Tac-Toe-Game"
+                                    class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card scroll-reveal fade-up delay-3">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-neuronos.png" alt="NeuronOS Project Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://neuron-os-v9fp.vercel.app/"
+                                        class="project-link-btn" title="Live Demo" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                    <a href="https://github.com/Algo-Sami/Neuron-OS"
+                                        class="project-link-btn" title="GitHub Repository" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-tag">AI Operating System</span>
+                            <h3 class="project-title">NeuronOS</h3>
+                            <p class="project-description">
+                                A futuristic AI-powered operating system interface featuring neural network visualizations, an intelligent command panel, and a sleek dark dashboard experience.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://neuron-os-v9fp.vercel.app/"
+                                    class="btn btn-gradient btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-eye"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Algo-Sami/Neuron-OS"
+                                    class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 (Future Reservation Space / Coming Soon) -->
+                    <div class="project-card coming-soon scroll-reveal fade-up delay-4">
+                        <div class="coming-soon-wrapper">
+                            <div class="coming-soon-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3 class="coming-soon-title">Next Project</h3>
+                            <p class="coming-soon-desc">Designing and developing a premium SaaS landing page concept
+                                with advanced features.</p>
+                            <span class="badge-status">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Work With Me Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="section-header scroll-reveal fade-up">
+                    <span class="section-subtitle">My Value</span>
+                    <h2 class="section-title">Why Work With Me</h2>
+                </div>
+
+                <div class="benefits-grid">
+                    <!-- Benefit Card 1 -->
+                    <div class="benefit-card scroll-reveal fade-up delay-1">
+                        <div class="benefit-icon bg-blue-trans">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="benefit-title">Responsive Design</h3>
+                        <p class="benefit-description">
+                            Websites optimized for every possible display. Smooth viewing on phone, tablet, laptop, or
+                            desktop.
+                        </p>
+                    </div>
+
+                    <!-- Benefit Card 2 -->
+                    <div class="benefit-card scroll-reveal fade-up delay-2">
+                        <div class="benefit-icon bg-cyan-trans">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="benefit-title">Modern UI/UX</h3>
+                        <p class="benefit-description">
+                            Visually stunning designs following high-end professional standards, SaaS layouts, and
+                            harmonious accents.
+                        </p>
+                    </div>
+
+                    <!-- Benefit Card 3 -->
+                    <div class="benefit-card scroll-reveal fade-up delay-3">
+                        <div class="benefit-icon bg-emerald-trans">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3 class="benefit-title">Fast Performance</h3>
+                        <p class="benefit-description">
+                            Lightweight layouts, image optimizations, and efficient code leading to rapid load times.
+                        </p>
+                    </div>
+
+                    <!-- Benefit Card 4 -->
+                    <div class="benefit-card scroll-reveal fade-up delay-4">
+                        <div class="benefit-icon bg-purple-trans">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="benefit-title">Clean Code</h3>
+                        <p class="benefit-description">
+                            Valid, semantic HTML5 structure, modular CSS, and structured scripts that are easy to
+                            maintain and scale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Left: Text -->
+                    <div class="contact-info scroll-reveal fade-left">
+                        <span class="section-subtitle">Let's Connect</span>
+                        <h2 class="section-title">Let's Work Together</h2>
+                        <p class="contact-text">
+                            Have a project in mind, need a freelancer, or just want to connect? Let's discuss how I can
+                            help bring your ideas to life with professional front-end engineering.
+                        </p>
+
+                        <!-- Contact Channels -->
+                        <div class="contact-links-list">
+                            <a href="mailto:su2823251@gmail.com" class="contact-link-item" id="mail-link">
+                                <div class="link-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="link-details">
+                                    <span class="link-label">Email Me</span>
+                                    <span class="link-value">su2823251@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Algo-Sami" class="contact-link-item" target="_blank"
+                                rel="noopener noreferrer" id="git-link">
+                                <div class="link-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class="link-details">
+                                    <span class="link-label">GitHub</span>
+                                    <span class="link-value">github.com/Algo-Sami</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/sami-ullah-58808a356/" class="contact-link-item" target="_blank"
+                                rel="noopener noreferrer" id="linkedin-link">
+                                <div class="link-icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="link-details">
+                                    <span class="link-label">LinkedIn</span>
+                                    <span class="link-value">linkedin.com/in/sami-ullah-58808a356</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Right: Form -->
+                    <div class="contact-card scroll-reveal fade-right">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <h3 class="form-title">Send a Message</h3>
+
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-user input-icon"></i>
+                                    <input type="text" id="form-name" class="form-input" placeholder="Your name"
+                                        required>
+                                </div>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-envelope input-icon"></i>
+                                    <input type="email" id="form-email" class="form-input"
+                                        placeholder="Your email address" required>
+                                </div>
+                                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-bookmark input-icon"></i>
+                                    <input type="text" id="form-subject" class="form-input"
+                                        placeholder="How can I help you?" required>
+                                </div>
+                                <span class="error-msg" id="subject-error">Please enter a subject</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Message</label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fa-regular fa-comment input-icon"></i>
+                                    <textarea id="form-message" class="form-input form-textarea"
+                                        placeholder="Describe your project or message..." required></textarea>
+                                </div>
+                                <span class="error-msg" id="message-error">Please enter your message</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-gradient btn-full" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#home" class="footer-logo">
+                    Sami<span class="logo-accent">.dev</span>
+                </a>
+
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#projects" class="footer-link">Projects</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+
+                <div class="footer-socials">
+                    <a href="https://github.com/Algo-Sami" class="social-icon" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sami-ullah-58808a356/" class="social-icon" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:su2823251@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Sami Ullah. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Custom Script -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
